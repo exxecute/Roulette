@@ -1,6 +1,4 @@
-package unit;
-
-import java.util.Random;
+package unit.roullete;
 
 public class Sector {
     private String color;
