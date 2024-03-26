@@ -15,8 +15,8 @@ public class Player {
     }
 
     public int generateBet() {
-        Random rand = new Random(pocket.getMoney());
-        return rand.nextInt();
+        Random rand = new Random();
+        return rand.nextInt(pocket.getMoney());
     }
 
     public Bet setBet(int money) {
@@ -28,8 +28,8 @@ public class Player {
     }
 
     public int generateSector() {
-        Random rand = new Random(Sector.MAX_NUMBER);
-        return rand.nextInt();
+        Random rand = new Random();
+        return rand.nextInt(Sector.MAX_NUMBER);
     }
 
     public Bank getPocket() {
